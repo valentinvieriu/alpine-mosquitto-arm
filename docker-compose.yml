@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  mosquito:
+    # image: valentinvieriu/alpine-mosquitto-arm:1.4.12
+    image: valentinvieriu/alpine-mosquitto-arm:latest
+    build:
+      context: .
+      args:
+        - MOSQUITTO_VERSION=v1.4.12
